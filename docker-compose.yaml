@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+  flask:
+    build: .
+    volumes:
+      - ./yet_another_directory:/usr/src/yet_another_directory/
+    ports:
+      - 8081:8081
+    container_name: localhost
+    image: localhost:latest
+    ports:
+      - "11211:11211"
